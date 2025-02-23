@@ -26,25 +26,33 @@
         ALL
       </a>
 
-      <!-- カスタムタクソノミーのターム一覧を出力 -->
+      <!-- カスタムタクソノミーのターム一覧を取得してループ -->
       <?php
-// 手動で並べたいタームスラッグ順
-$desired_order = array('license-courses', 'fun-diving', 'experience-diving');
+      // `campaign_category` の全タームを取得
+      $terms = get_terms(array(
+        'taxonomy'   => 'campaign_category', // 取得するタクソノミーの指定
+        'hide_empty' => false, // 投稿が0件のタームも含める
+      ));
 
-// 手動順でターム情報を取得
-foreach ($desired_order as $slug):
-  $term = get_term_by('slug', $slug, 'campaign_category');
-  if ($term && !is_wp_error($term)):
-    $is_active = (is_tax('campaign_category', $term->slug)) ? 'is-active' : '';
-     ?>
+      // 取得したタームをループで出力
+      if (!empty($terms) && !is_wp_error($terms)) :
+        foreach ($terms as $term) :
+          // 現在表示中のカテゴリーなら `is-active` クラスを付与
+          $is_active = is_tax('campaign_category', $term->slug) ? 'is-active' : '';
+          ?>
       <a href="<?php echo esc_url(get_term_link($term)); ?>"
         class="campaign-tab__item <?php echo esc_attr($is_active); ?>">
         <?php echo esc_html($term->name); ?>
       </a>
-      <?php endif; endforeach; ?>
+      <?php
+        endforeach;
+      endif;
+      ?>
+
     </div>
   </div>
 </div>
+
 
 
 <!--コンテンツ-->
@@ -57,8 +65,16 @@ foreach ($desired_order as $slug):
        the_post(); ?>
       <li class="campaign-page-card__item campaign-card">
         <div class="campaign-card__img-large">
-          <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像画像" />
+          <?php if (has_post_thumbnail()) : ?>
+          <!-- アイキャッチ画像を表示 -->
+          <img src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>"
+            alt="<?php echo esc_attr(get_the_title()); ?>">
+          <?php else : ?>
+          <!-- アイキャッチ画像がない場合のデフォルト画像 -->
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/no-image.jpg" alt="No Image">
+          <?php endif; ?>
         </div>
+
         <div class="campaign-card__body-large">
           <div class="campaign-card__text">
             <!-- キャンペーンカテゴリーを取得して表示 -->
@@ -73,48 +89,81 @@ foreach ($desired_order as $slug):
             <p class="campaign-card__title"><?php echo esc_html($category_name); ?></p>
             <p class="campaign-card__title-sub-large"><?php the_title(); ?></p>
           </div>
+          <?php
+           // ACFの「キャンペーン価格」グループを取得
+           $campaign_price = get_field('campaign_price');
+
+           // 配列が取得できていて、かつ 'original_price' と 'discount_price' の両方が存在し、数値である場合のみ表示
+           if (!empty($campaign_price) &&
+            isset($campaign_price['original_price'], $campaign_price['discount_price']) &&
+            is_numeric($campaign_price['original_price']) &&
+            is_numeric($campaign_price['discount_price'])):
+
+            $original_price = (float) $campaign_price['original_price'];
+            $discount_price = (float) $campaign_price['discount_price'];
+            ?>
           <div class="campaign-card__price-campaign">
             <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
             <div class="campaign-card__price-box">
-              <p class="campaign-card__price-old"><?php the_field('original_price') ?></p>
-              <p class="campaign-card__campaign-price-new"><?php the_field('discount_price') ?></p>
+              <p class="campaign-card__price-old">
+                <?php echo esc_html(number_format($original_price)); ?>円
+              </p>
+              <p class="campaign-card__price-new">
+                <?php echo esc_html(number_format($discount_price)); ?>円
+              </p>
             </div>
           </div>
+          <?php else: ?>
+          <p>価格情報が設定されていません。</p>
+          <?php endif; ?>
+
           <div class="campaign-card__text-box md-none">
             <p class="campaign-card__text-main">
               <?php the_field('text_main') ?>
             </p>
             <div class="campaign-card__date">
               <?php
-              // ACFから日付データを取得
-              $start_year = get_field('start_year');
-              $start_month = get_field('start_month');
-              $start_day = get_field('start_day');
+              // ACFの「キャンペーン期間」グループを取得
+              $campaign_period = get_field('campaign_period');
 
-              $end_year = get_field('end_year');
-              $end_month = get_field('end_month');
-              $end_day = get_field('end_day');
+              // データが取得できたか確認
+              if ($campaign_period):
+                  $start_date = $campaign_period['start_year-month-day'];
+                  $end_date = $campaign_period['end_year-month-day'];
+              else:
+                  $start_date = null;
+                  $end_date = null;
+              endif;
 
-              // データがすべて存在するかを確認
-              if ($start_year && $start_month && $start_day && $end_year && $end_month && $end_day): ?>
+              // 日付が取得できた場合のみ処理
+              if ($start_date && $end_date):
+                  // YYYY/MM/DD 形式の場合はスラッシュで分割
+                  list($start_year, $start_month, $start_day) = explode('/', $start_date);
+                  list($end_year, $end_month, $end_day) = explode('/', $end_date);
+
+                  // ゼロ埋めを削除（01 → 1 に変換）
+                  $start_month = intval($start_month);
+                  $start_day = intval($start_day);
+                  $end_month = intval($end_month);
+                  $end_day = intval($end_day);
+              ?>
 
               <p>
                 <?php
-                // 年が同じかどうか確認
-                if ($start_year === $end_year):
-                // 年が同じ場合は開始年のみを表示
-                echo esc_html("{$start_year}/{$start_month}/{$start_day} - {$end_month}/{$end_day}");
-                else:
-                // 年が異なる場合はすべて表示
-                echo esc_html("{$start_year}/{$start_month}/{$start_day} - {$end_year}/{$end_month}/{$end_day}");
-                endif;?>
+                 // 年が同じ場合は開始年を省略
+                 if ($start_year === $end_year):
+                     echo esc_html("{$start_year}/{$start_month}/{$start_day} - {$end_month}/{$end_day}");
+                 else:
+                     echo esc_html("{$start_year}/{$start_month}/{$start_day} - {$end_year}/{$end_month}/{$end_day}");
+                 endif;
+                 ?>
               </p>
 
               <?php else: ?>
               <p>日付範囲が設定されていません。</p>
               <?php endif; ?>
-
             </div>
+
             <p class="campaign-card__reserve">ご予約・お問い合わせはコチラ</p>
           </div>
           <div class="campaign-card__layout md-none">
