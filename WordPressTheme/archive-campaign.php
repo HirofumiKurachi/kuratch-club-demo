@@ -106,10 +106,10 @@
             <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
             <div class="campaign-card__price-box">
               <p class="campaign-card__price-old">
-                <?php echo esc_html(number_format($original_price)); ?>円
+                ¥<?php echo esc_html(number_format($original_price)); ?>
               </p>
               <p class="campaign-card__price-new">
-                <?php echo esc_html(number_format($discount_price)); ?>円
+                ¥<?php echo esc_html(number_format($discount_price)); ?>
               </p>
             </div>
           </div>

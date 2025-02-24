@@ -63,42 +63,45 @@
             <?php
           // カスタム投稿タイプ 'campaign' から投稿を取得
           $args = array(
-            'post_type' => 'campaign', // カスタム投稿タイプのスラッグ
+            'post_type'      => 'campaign', // カスタム投稿タイプのスラッグ
             'posts_per_page' => 4,    // 表示する投稿数
-            'orderby' => 'date',      // 日付で並び替え
-            'order' => 'DESC'         // 新しい順
+            'orderby'        => 'date', // 日付で並び替え
+            'order'          => 'DESC' // 新しい順
           );
           $campaign_query = new WP_Query($args);
 
           if ($campaign_query->have_posts()) :
             while ($campaign_query->have_posts()) : $campaign_query->the_post();
+              // カテゴリー（タクソノミー）名を取得
+              $terms = get_the_terms(get_the_ID(), 'campaign_category'); // 'campaign_category' はカスタムタクソノミーのスラッグ
+              $category_name = $terms && !is_wp_error($terms) ? esc_html($terms[0]->name) : '未分類';
           ?>
             <div class="campaign__container-slide swiper-slide">
               <a href="<?php the_permalink(); ?>" class="campaign-card">
                 <div class="campaign-card__img">
                   <?php if (has_post_thumbnail()) : ?>
-                  <!-- 投稿のアイキャッチ画像を表示 -->
                   <img src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>"
                     alt="<?php echo esc_attr(get_the_title()); ?>">
                   <?php else : ?>
-                  <!-- アイキャッチ画像がない場合のデフォルト画像 -->
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/no-image.jpg" alt="<?php the_title(); ?>">
                   <?php endif; ?>
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
-                    <p class="campaign-card__title"><?php the_field('title_sub') ?></p>
-                    <p class="campaign-card__title-sub"><?php the_title(); ?>
-                    </p>
+                    <p class="campaign-card__title"><?php echo $category_name; ?></p>
+                    <p class="campaign-card__title-sub"><?php the_title(); ?></p>
                   </div>
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
                     <div class="campaign-card__price-box">
+                      <?php
+                      $campaign_price = get_field('campaign_price'); // ACF のデータを取得
+                      ?>
                       <p class="campaign-card__price-old">
-                        <?php the_field('original_price') ?>
+                        ¥<?php echo esc_html($campaign_price['original_price']); ?>
                       </p>
                       <p class="campaign-card__price-new">
-                        <?php the_field('discount_price') ?>
+                        ¥<?php echo esc_html($campaign_price['discount_price']); ?>
                       </p>
                     </div>
                   </div>
@@ -125,6 +128,7 @@
       </div>
     </div>
   </section>
+
 
   <!--アバウトアス-->
   <section class="about-us about-us-top">
@@ -252,29 +256,44 @@
       </div>
       <div class="voice__cards voice-cards">
         <?php
-      // カスタム投稿タイプ 'voice' から投稿を取得
-      $args = array(
-        'post_type' => 'voice',      // カスタム投稿タイプのスラッグ
-        'posts_per_page' => 2,       // 表示する投稿数（ここでは2件）
-        'orderby' => 'date',         // 日付で並び替え
-        'order' => 'DESC'            // 新しい順に表示
-      );
-      $voice_query = new WP_Query($args);
+            // カスタム投稿タイプ 'voice' から投稿を取得
+            $args = array(
+                'post_type'      => 'voice', // カスタム投稿タイプのスラッグ
+                'posts_per_page' => 2,    // 表示する投稿数
+                'orderby'        => 'date', // 日付で並び替え
+                'order'          => 'DESC' // 新しい順
+            );
+            $voice_query = new WP_Query($args);
 
-      if ($voice_query->have_posts()) :
-        while ($voice_query->have_posts()) : $voice_query->the_post();
-          // カスタムフィールドの値を取得
-          $age_gender = get_post_meta(get_the_ID(), 'age_gender', true); // 例: "20代(女性)"
-          $program = get_post_meta(get_the_ID(), 'program', true); // 例: "ライセンス講習"
-          $subtitle = get_post_meta(get_the_ID(), 'subtitle', true); // タイトルの補足説明
-      ?>
+            if ($voice_query->have_posts()) :
+                while ($voice_query->have_posts()) : $voice_query->the_post();
+                    // ACFのグループフィールドから「年代」と「性別」を取得
+                    $user_info = get_field('user_information'); // グループフィールドの取得
+                    $era = !empty($user_info['era']) ? $user_info['era'] : '年代不明';
+                    $sex = !empty($user_info['sex']) ? $user_info['sex'] : '性別不明';
+
+                    // 「年代（性別）」の形式にする
+                    $user_profile = esc_html($era) . '（' . esc_html($sex) . '）';
+
+                    // ボイスカテゴリー（タクソノミー）名を取得
+                    $terms = get_the_terms(get_the_ID(), 'voice_category'); // 'voice_category' はカスタムタクソノミーのスラッグ
+                    if (!empty($terms) && !is_wp_error($terms)) {
+                        // 複数カテゴリーがある場合はカンマ区切りで表示
+                        $category_names = wp_list_pluck($terms, 'name');
+                        $category_name = implode(', ', $category_names);
+                    } else {
+                        $category_name = '未分類'; // カテゴリーがない場合のデフォルト値
+                    }
+            ?>
         <div class="voice-cards__item-box voice-card">
           <div class="voice-card__item">
             <div class="voice-card__container">
               <div class="voice-card__title-box">
                 <div class="voice-card__title-box1">
-                  <p class="voice-card__title-sub"><?php the_field('title_sub') ?></p>
-                  <p class="voice-card__title"><?php the_title(); ?></p>
+                  <!--  年代（性別）を voice-card__title-sub に表示 -->
+                  <p class="voice-card__title-sub"><?php echo $user_profile; ?></p>
+                  <!--  カテゴリー名を voice-card__title に表示 -->
+                  <p class="voice-card__title"><?php echo esc_html($category_name); ?></p>
                 </div>
                 <div class="voice-card__title-box2">
                   <p class="voice-card__title-text"><?php the_field('title-text') ?></p>
@@ -299,10 +318,10 @@
           </div>
         </div>
         <?php
-        endwhile;
-        wp_reset_postdata();
-      else :
-      ?>
+                endwhile;
+                wp_reset_postdata();
+            else :
+            ?>
         <p>現在、お客様の声はありません。</p>
         <?php endif; ?>
       </div>
@@ -312,6 +331,8 @@
       </div>
     </div>
   </section>
+
+
 
   <!--プライス-->
   <section class="price price-top">
