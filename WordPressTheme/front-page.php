@@ -1,6 +1,31 @@
 <?php get_header(); ?>
 <main>
   <!--メインビュー-->
+  <?php
+   $slider_images = SCF::get('mv_slider_images'); // SCFからデータ取得
+   $valid_images = []; // 有効なスライドを格納
+
+   // 画像が存在するかチェック
+   if (!empty($slider_images)) {
+       foreach ($slider_images as $image) {
+           $img_src_pc = wp_get_attachment_image_src($image['mv_slider_pc_img'], 'large')[0] ?? '';
+           $img_src_sp = wp_get_attachment_image_src($image['mv_slider_sp_img'], 'full')[0] ?? '';
+           $alt_text = esc_attr($image['mv_slider_alt']);
+
+           // **PC画像とSP画像の両方が存在する場合のみスライドを表示**
+           if (!empty($img_src_pc) && !empty($img_src_sp)) {
+               $valid_images[] = [
+                   'pc'  => $img_src_pc,
+                   'sp'  => $img_src_sp,
+                   'alt' => $alt_text
+               ];
+           }
+       }
+   }
+
+   // **有効なスライドが1枚以上ある場合のみスライダーを表示**
+   if (!empty($valid_images)) :
+   ?>
   <div class="mv">
     <div class="mv__inner">
       <div class="mv__title-wrap">
@@ -9,28 +34,20 @@
       </div>
       <div class="mv__slider swiper js-mv-swiper">
         <div class="mv__slider swiper-wrapper">
-          <?php
-        $slider_images = SCF::get('mv_slider_images'); // SCFからデータ取得
-        if ($slider_images):
-          foreach ($slider_images as $image):
-            $img_src_pc = wp_get_attachment_image_src($image['mv_slider_pc_img'], 'large')[0];
-            $img_src_sp = wp_get_attachment_image_src($image['mv_slider_sp_img'], 'full')[0];
-            $alt_text = esc_attr($image['mv_slider_alt']);
-        ?>
+          <?php foreach ($valid_images as $image): ?>
           <div class="mv__slider swiper-slide">
             <picture>
-              <source srcset="<?php echo esc_url($img_src_pc); ?>" media="(min-width: 768px)" />
-              <img src="<?php echo esc_url($img_src_sp); ?>" alt="<?php echo $alt_text; ?>" />
+              <source srcset="<?php echo esc_url($image['pc']); ?>" media="(min-width: 768px)" />
+              <img src="<?php echo esc_url($image['sp']); ?>" alt="<?php echo $image['alt']; ?>" />
             </picture>
           </div>
-          <?php
-          endforeach;
-        endif;
-        ?>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
   </div>
+  <?php endif; ?>
+
 
   <!--キャンペーン-->
   <section class="campaign campaign-top">
@@ -61,11 +78,11 @@
                 <div class="campaign-card__img">
                   <?php if (has_post_thumbnail()) : ?>
                   <!-- 投稿のアイキャッチ画像を表示 -->
-                  <?php the_post_thumbnail('medium', ['alt' => get_the_title()]); ?>
+                  <img src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>"
+                    alt="<?php echo esc_attr(get_the_title()); ?>">
                   <?php else : ?>
                   <!-- アイキャッチ画像がない場合のデフォルト画像 -->
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/default-campaign.jpg"
-                    alt="<?php the_title(); ?>">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/no-image.jpg" alt="<?php the_title(); ?>">
                   <?php endif; ?>
                 </div>
                 <div class="campaign-card__body">
@@ -194,15 +211,15 @@
             <div class="blog-card__img">
               <?php if (has_post_thumbnail()) : ?>
               <!-- 投稿のアイキャッチ画像を表示 -->
-              <?php the_post_thumbnail('medium', ['alt' => get_the_title()]); ?>
+              <img src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>"
+                alt="<?php echo esc_attr(get_the_title()); ?>">
               <?php else : ?>
               <!-- アイキャッチ画像がない場合のデフォルト画像 -->
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/default-blog.jpg" alt="<?php the_title(); ?>">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/no-image.jpg" alt="<?php the_title(); ?>">
               <?php endif; ?>
             </div>
             <div class="blog-card__body">
-              <time class="blog-card__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m/d'); ?>>
-                <?php echo get_the_date('Y.m.d'); ?>
+              <time class="blog-card__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m/d'); ?>
               </time>
               <h3 class="blog-card__text"><?php the_title(); ?></h3>
               <p class="blog-card__text-sub">
@@ -266,11 +283,11 @@
               <div class="voice-card__img colorbox">
                 <?php if (has_post_thumbnail()) : ?>
                 <!-- アイキャッチ画像を表示 -->
-                <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>のアイキャッチ画像画像" />
+                <img src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>"
+                  alt="<?php echo esc_attr(get_the_title()); ?>">
                 <?php else : ?>
                 <!-- アイキャッチ画像がない場合のデフォルト画像 -->
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/default-voice.jpg"
-                  alt="<?php the_title(); ?>">
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/no-image.jpg" alt="<?php the_title(); ?>">
                 <?php endif; ?>
               </div>
             </div>
