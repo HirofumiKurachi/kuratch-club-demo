@@ -98,13 +98,23 @@
 
             <!-- お客様の声の詳細 -->
             <div class="blog-heading-card-review__title-box">
+              <!--  年代（性別）を blog-heading-card-review__title-sub に表示 -->
               <p class="blog-heading-card-review__title-sub">
-                <?php the_field('title_sub') ?>
+                <?php
+        // ACFのグループフィールドから「年代」と「性別」を取得
+        $user_info = get_field('user_information'); // グループフィールドの取得
+        $era = !empty($user_info['era']) ? $user_info['era'] : '年代不明';
+        $sex = !empty($user_info['sex']) ? $user_info['sex'] : '性別不明';
+
+        // 「年代（性別）」の形式にする
+        echo esc_html($era) . '（' . esc_html($sex) . '）';
+        ?>
               </p>
               <div class="blog-heading-card-review__title-box2">
                 <p class="blog-heading-card-review__title-text"><?php the_field('title-text') ?></p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -165,35 +175,36 @@
           <div class="blog-heading-card-campaign__text">
             <p class="blog-heading-card-campaign__title-sub"><?php the_title(); ?></p>
           </div>
-          <!-- キャンペーン価格情報（カスタムフィールド想定） -->
+          <!-- キャンペーン価格情報（ACFから取得） -->
           <div class="blog-heading-card-campaign__price">
             <p class="blog-heading-card-campaign__price-text">全部コミコミ(お一人様)</p>
             <div class="blog-heading-card-campaign__price-box">
               <?php
-              // カスタムフィールド（値引き前と値引き後を取得）
-              $old_price = get_post_meta(get_the_ID(), 'original_price', true);
-              $new_price = get_post_meta(get_the_ID(), 'discount_price', true);
-              ?>
-              <?php
-              // 旧価格の処理
-              if ($old_price) :
-              // '¥' と ',' を削除し、数値に変換
-              $old_price_clean = (int)str_replace(array('¥', ','), '', $old_price);
-              ?>
-              <p class="blog-heading-card-campaign__price-old">¥<?php echo number_format($old_price_clean); ?></p>
+            // ACFのグループフィールドから価格情報を取得
+            $campaign_price = get_field('campaign_price');
+
+            // 通常価格（original_price）を取得
+            $old_price = isset($campaign_price['original_price']) ? (int)$campaign_price['original_price'] : 0;
+
+            // 値引き価格（discount_price）を取得
+            $new_price = isset($campaign_price['discount_price']) ? (int)$campaign_price['discount_price'] : 0;
+            ?>
+
+              <?php if ($old_price) : ?>
+              <p class="blog-heading-card-campaign__price-old">
+                ¥<?php echo number_format(esc_html($old_price)); ?>
+              </p>
               <?php endif; ?>
 
-              <?php
-              // 新価格の処理
-              if ($new_price) :
-              // '¥' と ',' を削除し、数値に変換
-              $new_price_clean = (int)str_replace(array('¥', ','), '', $new_price);
-              ?>
-              <p class="blog-heading-card-campaign__price-new">¥<?php echo number_format($new_price_clean); ?></p>
+              <?php if ($new_price) : ?>
+              <p class="blog-heading-card-campaign__price-new">
+                ¥<?php echo number_format(esc_html($new_price)); ?>
+              </p>
               <?php endif; ?>
             </div>
           </div>
         </div>
+
       </a>
       <?php
       endwhile;
