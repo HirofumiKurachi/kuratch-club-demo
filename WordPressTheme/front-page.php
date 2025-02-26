@@ -350,7 +350,7 @@
           // 固定ページ ID を指定 (例: 174)
           $page_price_id = 174;
 
-         // SCFからライセンス講習データを取得
+         // SCFからお寺・遺跡巡りデータを取得
          $visiting_temples = SCF::get('visiting_temples', $page_price_id);
           ?>
 
@@ -378,16 +378,16 @@
           // 固定ページ ID を指定 (例: 174)
           $page_price_id = 174;
 
-         // SCFから体験ダイビングデータを取得
-         $experience_diving = SCF::get('experience_diving', $page_price_id);
+         // SCFからアクティビティデータを取得
+         $activity = SCF::get('activity', $page_price_id);
           ?>
 
           <div class="price__items-item price-item">
-            <h3 class="price-item__title">体験ダイビング</h3>
+            <h3 class="price-item__title">アクテビティ</h3>
 
-            <?php if (!empty($experience_diving)): ?>
+            <?php if (!empty($activity)): ?>
             <dl class="price-item__box">
-              <?php foreach ($experience_diving as $item): ?>
+              <?php foreach ($activity as $item): ?>
               <?php
             // 数値変換用に不要な文字を削除
             $clean_price = preg_replace('/[^\d]/', '', $item['course_price-2']);
@@ -406,16 +406,16 @@
           // 固定ページ ID を指定 (例: 174)
           $page_price_id = 174;
 
-         // SCFかファンダイビングfデータを取得
-         $fun_diving = SCF::get('fun_diving', $page_price_id);
+         // SCFからエンターテイメントデータを取得
+         $entertainment = SCF::get('entertainment', $page_price_id);
           ?>
 
           <div class="price__items-item price-item">
-            <h3 class="price-item__title">ファンダイビング</h3>
+            <h3 class="price-item__title">エンターテイメント</h3>
 
-            <?php if (!empty($fun_diving)): ?>
+            <?php if (!empty($entertainment)): ?>
             <dl class="price-item__box">
-              <?php foreach ($fun_diving as $item): ?>
+              <?php foreach ($entertainment as $item): ?>
               <?php
             // 数値変換用に不要な文字を削除
             $clean_price = preg_replace('/[^\d]/', '', $item['course_price-3']);
@@ -434,16 +434,16 @@
           // 固定ページ ID を指定 (例: 174)
           $page_price_id = 174;
 
-         // SCFからスペシャルダイビングデータを取得
-         $special_diving = SCF::get('special_diving', $page_price_id);
+         // SCFからスペシャルツアーデータを取得
+         $special_tour = SCF::get('special_tour', $page_price_id);
           ?>
 
           <div class="price__items-item price-item">
             <h3 class="price-item__title">スペシャルダイビング</h3>
 
-            <?php if (!empty($special_diving)): ?>
+            <?php if (!empty($special_tour)): ?>
             <dl class="price-item__box">
-              <?php foreach ($special_diving as $item): ?>
+              <?php foreach ($special_tour as $item): ?>
               <?php
             // 数値変換用に不要な文字を削除
             $clean_price = preg_replace('/[^\d]/', '', $item['course_price-4']);

@@ -73,12 +73,12 @@
 
       <?php
         // 繰り返しフィールドを取得
-        $experience_diving = SCF::get('experience_diving');
+        $activity = SCF::get('activity');
         $valid_experiences = []; // 有効なデータを格納する配列
 
         // データのバリデーション（`course_name-2` と `course_price-2` が両方入力されているかチェック）
-        if (!empty($experience_diving)) {
-            foreach ($experience_diving as $item) {
+        if (!empty($activity)) {
+            foreach ($activity as $item) {
                 // `course_name-2` と `course_price-2` を取得（未設定なら空文字にする）
                 $course_name = isset($item['course_name-2']) ? trim($item['course_name-2']) : '';
                 $course_price = isset($item['course_price-2']) ? trim($item['course_price-2']) : '';
@@ -99,9 +99,9 @@
       // **有効なデータが1つもない場合、「体験ダイビング」全体を非表示**
       if (!empty($valid_experiences)) :
       ?>
-      <div id="experience_diving" class="price-page-items__item price-page-item">
-        <h2 class="price-page-item__head-sp">体験ダイビング</h2>
-        <h2 class="price-page-item__head-pc-long">体験ダイビング</h2>
+      <div id="activity" class="price-page-items__item price-page-item">
+        <h2 class="price-page-item__head-sp">アクテビティ</h2>
+        <h2 class="price-page-item__head-pc-long">アクテビティ</h2>
 
         <table class="price-page-item__box price-page-box">
           <?php foreach ($valid_experiences as $experience): ?>
@@ -120,12 +120,12 @@
 
       <?php
        // 繰り返しフィールドを取得
-       $fun_diving = SCF::get('fun_diving');
-       $valid_fun_diving = []; // 有効なデータを格納する配列
+       $entertainment = SCF::get('entertainment');
+       $valid_entertainment = []; // 有効なデータを格納する配列
 
       // データのバリデーション（`course_name-3` と `course_price-3` が両方入力されているかチェック）
-      if (!empty($fun_diving)) {
-          foreach ($fun_diving as $item) {
+      if (!empty($entertainment)) {
+          foreach ($entertainment as $item) {
               // `course_name-3` と `course_price-3` を取得（未設定なら空文字にする）
               $course_name = isset($item['course_name-3']) ? trim($item['course_name-3']) : '';
               $course_price = isset($item['course_price-3']) ? trim($item['course_price-3']) : '';
@@ -135,7 +135,7 @@
 
               // `course_name-3` と `course_price-3` の両方が空でない場合のみ追加
               if (!empty($course_name) && !empty($clean_price)) {
-                  $valid_fun_diving[] = [
+                  $valid_entertainment[] = [
                       'name' => $course_name,
                       'price' => (float)$clean_price
                   ];
@@ -144,14 +144,14 @@
       }
 
        // **有効なデータが1つもない場合、「ファンダイビング」全体を非表示**
-       if (!empty($valid_fun_diving)) :
+       if (!empty($valid_entertainment)) :
        ?>
-      <div id="fun_diving" class="price-page-items__item price-page-item">
-        <h2 class="price-page-item__head-sp-middle">ファンダイビング</h2>
-        <h2 class="price-page-item__head-pc-long">ファンダイビング</h2>
+      <div id="entertainment" class="price-page-items__item price-page-item">
+        <h2 class="price-page-item__head-sp-middle">エンターテイメント</h2>
+        <h2 class="price-page-item__head-pc-long">エンターテイメント</h2>
 
         <table class="price-page-item__box price-page-box">
-          <?php foreach ($valid_fun_diving as $fun): ?>
+          <?php foreach ($valid_entertainment as $fun): ?>
           <tr>
             <td class="price-page-box__name">
               <?php echo esc_html($fun['name']); ?>
@@ -167,12 +167,12 @@
 
       <?php
        // 繰り返しフィールドを取得
-       $special_diving = SCF::get('special_diving');
-       $valid_special_diving = []; // 有効なデータを格納する配列
+       $special_tour = SCF::get('special_tour');
+       $valid_special_tour = []; // 有効なデータを格納する配列
 
        // データのバリデーション（`course_name-4` と `course_price-4` が両方入力されているかチェック）
-       if (!empty($special_diving)) {
-           foreach ($special_diving as $item) {
+       if (!empty($special_tour)) {
+           foreach ($special_tour as $item) {
                // `course_name-4` と `course_price-4` を取得（未設定なら空文字にする）
                $course_name = isset($item['course_name-4']) ? trim($item['course_name-4']) : '';
                $course_price = isset($item['course_price-4']) ? trim($item['course_price-4']) : '';
@@ -182,7 +182,7 @@
 
                // `course_name-4` と `course_price-4` の両方が空でない場合のみ追加
                if (!empty($course_name) && !empty($clean_price)) {
-                   $valid_special_diving[] = [
+                   $valid_special_tour[] = [
                        'name' => $course_name,
                        'price' => (float)$clean_price
                    ];
@@ -190,15 +190,15 @@
            }
        }
 
-       // **有効なデータが1つもない場合、「スペシャルダイビング」全体を非表示**
-       if (!empty($valid_special_diving)) :
+       // **有効なデータが1つもない場合、「スペシャルツアー」全体を非表示**
+       if (!empty($valid_special_tour)) :
        ?>
-      <div class="price-page-items__item price-page-item">
-        <h2 class="price-page-item__head-sp-last">スペシャルダイビング</h2>
-        <h2 class="price-page-item__head-pc">スペシャルダイビング</h2>
+      <div id="special_tour" class="price-page-items__item price-page-item">
+        <h2 class="price-page-item__head-sp-last">スペシャルツアー</h2>
+        <h2 class="price-page-item__head-pc">スペシャルツアー</h2>
 
         <table class="price-page-item__box price-page-box">
-          <?php foreach ($valid_special_diving as $special): ?>
+          <?php foreach ($valid_special_tour as $special): ?>
           <tr>
             <td class="price-page-box__name">
               <?php echo esc_html($special['name']); ?>

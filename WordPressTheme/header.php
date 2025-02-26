@@ -129,9 +129,11 @@
                     href="<?php echo esc_url(home_url('/price#visiting_temples')); ?>">お寺・遺跡巡り</a>
                 </li>
                 <li class="drawer-menu__item-text-b"><a
-                    href="<?php echo esc_url(home_url('/price#experience_diving')); ?>">体験ダイビング</a></li>
+                    href="<?php echo esc_url(home_url('/price#activity')); ?>">アクティビティ</a>
+                </li>
                 <li class="drawer-menu__item-text-b"><a
-                    href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">ファンダイビング</a></li>
+                    href="<?php echo esc_url(home_url('/price#entertainment')); ?>">エンターテイメント</a>
+                </li>
               </ul>
               <ul class="drawer-menu__items-bottom">
                 <li class="drawer-menu__item">

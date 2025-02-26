@@ -95,10 +95,13 @@
             <a href="<?php echo esc_url(home_url('/price#visiting_temples')); ?>">お寺・遺跡巡り</a>
           </li>
           <li class="site-map-menu__item-text-b">
-            <a href="<?php echo esc_url(home_url('/price#experience_diving')); ?>">体験ダイビング</a>
+            <a href="<?php echo esc_url(home_url('/price#activity')); ?>">アクテビティ</a>
           </li>
           <li class="site-map-menu__item-text-b">
-            <a href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">ファンダイビング</a>
+            <a href="<?php echo esc_url(home_url('/price#entertainment')); ?>">エンターテイメント</a>
+          </li>
+          <li class="footer-menu__item-text-b">
+            <a href="<?php echo esc_url(home_url('/price#special_tour')); ?>">スペシャルツアー</a>
           </li>
         </ul>
         <ul class="site-map-menu__right-items-bottom">

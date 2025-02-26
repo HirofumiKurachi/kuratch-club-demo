@@ -154,15 +154,14 @@
                   <a href="<?php echo esc_url(home_url('/price#visiting_temples')); ?>">お寺・遺跡巡り</a>
                 </li>
                 <li class="footer-menu__item-text-b">
-                  <a href="<?php echo esc_url(home_url('/price#experience_diving')); ?>">アクテビティ</a>
+                  <a href="<?php echo esc_url(home_url('/price#activity')); ?>">アクテビティ</a>
                 </li>
                 <li class="footer-menu__item-text-b">
-                  <a href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">エンターテイメント</a>
+                  <a href="<?php echo esc_url(home_url('/price#entertainment')); ?>">エンターテイメント</a>
                 </li>
                 <li class="footer-menu__item-text-b">
-                  <a href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">スペシャルツアー</a>
+                  <a href="<?php echo esc_url(home_url('/price#special_tour')); ?>">スペシャルツアー</a>
                 </li>
-
               </ul>
               <ul class="footer-menu__right-items-bottom">
                 <li class="footer-menu__item">
