@@ -3086,7 +3086,7 @@ main {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 400;
-	letter-spacing: 0.52em;
+	letter-spacing: 0.1em;
 	text-align: center;
 	text-indent: 1.4rem;
 }
@@ -5677,7 +5677,7 @@ html {
 
 .mv__title-sub {
 	font-size: 5rem;
-	letter-spacing: 0.53em;
+	letter-spacing: 0.1em;
 	text-align: center;
 	text-indent: 0.53em;
 }

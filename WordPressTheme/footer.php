@@ -63,7 +63,7 @@
           <div class="footer__title footer-title">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-title__name-layout">
               <h3 class="footer-title__name">
-                <img class="footer-title__name-logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.svg"
+                <img class="footer-title__name-logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.png"
                   alt="CodeUps" />
               </h3>
             </a>

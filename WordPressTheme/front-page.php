@@ -29,8 +29,8 @@
   <div class="mv">
     <div class="mv__inner">
       <div class="mv__title-wrap">
-        <h2 class="mv__title-sub">DIVING</h2>
-        <h3 class="mv__text">into the ocean</h3>
+        <h2 class="mv__title-sub">Life is a journey</h2>
+        <h3 class="mv__text">Let's weave your story</h3>
       </div>
       <div class="mv__slider swiper js-mv-swiper">
         <div class="mv__slider swiper-wrapper">
