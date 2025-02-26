@@ -100,7 +100,7 @@
           <li class="site-map-menu__item-text-b">
             <a href="<?php echo esc_url(home_url('/price#entertainment')); ?>">エンターテイメント</a>
           </li>
-          <li class="footer-menu__item-text-b">
+          <li class="site-map-menu__item-text-b">
             <a href="<?php echo esc_url(home_url('/price#special_tour')); ?>">スペシャルツアー</a>
           </li>
         </ul>
