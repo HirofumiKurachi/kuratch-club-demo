@@ -102,13 +102,13 @@
                   </a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url($category_links['license-courses'] ?? '#'); ?>">ライセンス取得</a>
+                  <a href="<?php echo esc_url($category_links['visiting-temples'] ?? '#'); ?>">お寺・遺跡巡り</a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url($category_links['fun-diving'] ?? '#'); ?>">ファンダイビング</a>
+                  <a href="<?php echo esc_url($category_links['activity'] ?? '#'); ?>">アクティビティ</a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url($category_links['experience-diving'] ?? '#'); ?>">体験ダイビング</a>
+                  <a href="<?php echo esc_url($category_links['entertainment'] ?? '#'); ?>">エンターテインメント</a>
                 </li>
                 <li class="footer-menu__item">
                   <a href="<?php echo esc_url(home_url('/')); ?>about-us" class="footer-menu__link-sub">

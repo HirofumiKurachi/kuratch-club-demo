@@ -29,7 +29,7 @@
       <!-- カスタムタクソノミーのターム一覧を出力 -->
       <?php
 // 手動で並べたいタームスラッグ順
-$desired_order = array('license-courses', 'fun-diving', 'experience-diving');
+$desired_order = array('activity', 'entertainment', 'visiting-temples');
 
 // 手動順でターム情報を取得
 foreach ($desired_order as $slug):

@@ -43,13 +43,13 @@
             </a>
           </li>
           <li class="site-map-menu__item-text">
-            <a href="<?php echo esc_url($category_links['license-courses'] ?? '#'); ?>">ライセンス取得</a>
+            <a href="<?php echo esc_url($category_links['visiting-temples'] ?? '#'); ?>">お寺・遺跡巡り</a>
           </li>
           <li class="site-map-menu__item-text">
-            <a href="<?php echo esc_url($category_links['fun-diving'] ?? '#'); ?>">貸切体験ダイビング</a>
+            <a href="<?php echo esc_url($category_links['activity'] ?? '#'); ?>">アクテビティ</a>
           </li>
           <li class="site-map-menu__item-text">
-            <a href="<?php echo esc_url($category_links['experience-diving'] ?? '#'); ?>">ナイトダイビング</a>
+            <a href="<?php echo esc_url($category_links['entertainment'] ?? '#'); ?>">エンターテインメント</a>
           </li>
           <li class="site-map-menu__item">
             <a href="<?php echo esc_url(home_url('/')); ?>about-us" class="site-map-menu__link-sub">
