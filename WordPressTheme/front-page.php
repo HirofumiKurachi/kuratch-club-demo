@@ -351,15 +351,15 @@
           $page_price_id = 174;
 
          // SCFからライセンス講習データを取得
-         $license_courses = SCF::get('license_courses', $page_price_id);
+         $visiting_temples = SCF::get('visiting_temples', $page_price_id);
           ?>
 
           <div class="price__items-item price-item">
-            <h3 class="price-item__title">ライセンス講習</h3>
+            <h3 class="price-item__title">お寺・遺跡巡り</h3>
 
-            <?php if (!empty($license_courses)): ?>
+            <?php if (!empty($visiting_temples)): ?>
             <dl class="price-item__box">
-              <?php foreach ($license_courses as $item): ?>
+              <?php foreach ($visiting_temples as $item): ?>
               <?php
             // 数値変換用に不要な文字を削除
             $clean_price = preg_replace('/[^\d]/', '', $item['course_price-1']);

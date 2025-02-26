@@ -126,7 +126,8 @@
                   </a>
                 </li>
                 <li class="drawer-menu__item-text-b"><a
-                    href="<?php echo esc_url(home_url('/price#license_courses')); ?>">ライセンス講習</a></li>
+                    href="<?php echo esc_url(home_url('/price#visiting_temples')); ?>">お寺・遺跡巡り</a>
+                </li>
                 <li class="drawer-menu__item-text-b"><a
                     href="<?php echo esc_url(home_url('/price#experience_diving')); ?>">体験ダイビング</a></li>
                 <li class="drawer-menu__item-text-b"><a

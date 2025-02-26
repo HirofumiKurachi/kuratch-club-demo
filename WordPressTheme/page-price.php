@@ -22,12 +22,12 @@
     <div class="price-page__items price-page-items">
       <?php
        // 繰り返しフィールドを取得
-       $license_courses = SCF::get('license_courses');
+       $visiting_temples = SCF::get('visiting_temples');
        $valid_courses = []; // 有効なデータを格納する配列
 
         // データのバリデーション（`course_name-1` と `course_price-1` が両方入力されているかチェック）
-        if (!empty($license_courses)) {
-            foreach ($license_courses as $item) {
+        if (!empty($visiting_temples)) {
+            foreach ($visiting_temples as $item) {
                 // `course_name-1` と `course_price-1` の取得（未設定なら空文字にする）
                 $course_name = isset($item['course_name-1']) ? trim($item['course_name-1']) : '';
                 $course_price = isset($item['course_price-1']) ? trim($item['course_price-1']) : '';
@@ -52,9 +52,9 @@
          if (!empty($valid_courses)) :
          ?>
       <!--WP化に伴い、id追加-->
-      <div id="license_courses" class="price-page-items__item price-page-item">
-        <h2 class="price-page-item__head-sp">ライセンス講習</h2>
-        <h2 class="price-page-item__head-pc">ライセンス講習</h2>
+      <div id="visiting_temples" class="price-page-items__item price-page-item">
+        <h2 class="price-page-item__head-sp">お寺・遺跡巡り</h2>
+        <h2 class="price-page-item__head-pc">お寺・遺跡巡り</h2>
 
         <table class="price-page-item__box price-page-box">
           <?php foreach ($valid_courses as $course): ?>

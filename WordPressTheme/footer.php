@@ -102,13 +102,13 @@
                   </a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url($category_links['visiting-temples'] ?? '#'); ?>">お寺・遺跡巡り</a>
-                </li>
-                <li class="footer-menu__item-text">
                   <a href="<?php echo esc_url($category_links['activity'] ?? '#'); ?>">アクティビティ</a>
                 </li>
                 <li class="footer-menu__item-text">
                   <a href="<?php echo esc_url($category_links['entertainment'] ?? '#'); ?>">エンターテインメント</a>
+                </li>
+                <li class="footer-menu__item-text">
+                  <a href="<?php echo esc_url($category_links['visiting-temples'] ?? '#'); ?>">お寺・遺跡巡り</a>
                 </li>
                 <li class="footer-menu__item">
                   <a href="<?php echo esc_url(home_url('/')); ?>about-us" class="footer-menu__link-sub">
@@ -123,13 +123,13 @@
                   </a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url(add_query_arg('id', 'tab1', home_url('/information'))); ?>">ライセンス講習</a>
+                  <a href="<?php echo esc_url(add_query_arg('id', 'tab1', home_url('/information'))); ?>">お寺・遺跡巡り</a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url(add_query_arg('id', 'tab3', home_url('/information'))); ?>">体験ダイビング</a>
+                  <a href="<?php echo esc_url(add_query_arg('id', 'tab3', home_url('/information'))); ?>">アクテビティ</a>
                 </li>
                 <li class="footer-menu__item-text">
-                  <a href="<?php echo esc_url(add_query_arg('id', 'tab2', home_url('/information'))); ?>">ファンダイビング</a>
+                  <a href="<?php echo esc_url(add_query_arg('id', 'tab2', home_url('/information'))); ?>">エンターテイメント</a>
                 </li>
                 <li class="footer-menu__item">
                   <a href="<?php echo esc_url(home_url('/')); ?>blog" class="footer-menu__link-sub">
@@ -151,13 +151,16 @@
                   </a>
                 </li>
                 <li class="footer-menu__item-text-b">
-                  <a href="<?php echo esc_url(home_url('/price#license_courses')); ?>">ライセンス講習</a>
+                  <a href="<?php echo esc_url(home_url('/price#visiting_temples')); ?>">お寺・遺跡巡り</a>
                 </li>
                 <li class="footer-menu__item-text-b">
-                  <a href="<?php echo esc_url(home_url('/price#experience_diving')); ?>">体験ダイビング</a>
+                  <a href="<?php echo esc_url(home_url('/price#experience_diving')); ?>">アクテビティ</a>
                 </li>
                 <li class="footer-menu__item-text-b">
-                  <a href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">ファンダイビング</a>
+                  <a href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">エンターテイメント</a>
+                </li>
+                <li class="footer-menu__item-text-b">
+                  <a href="<?php echo esc_url(home_url('/price#fun_diving')); ?>">スペシャルツアー</a>
                 </li>
 
               </ul>
