@@ -2123,16 +2123,6 @@ input[type=checkbox]:checked + .contact-form__check-label::after {
 	position: relative;
 }
 
-.contact__inner::after {
-	background: url(./../images/prco-logo.svg) center center/contain no-repeat;
-	content: "";
-	height: 3.125rem;
-	position: absolute;
-	right: calc(50% - min(48vw, 10.78125rem));
-	top: -1.5625rem;
-	width: 6.8125rem;
-}
-
 .contact__box {
 	margin-left: auto;
 	margin-right: auto;
@@ -4729,7 +4719,7 @@ html {
 	height: 11.3125rem;
 	position: absolute;
 	right: calc(50% - min(48vw, 39.8125rem));
-	width: 12.125rem;
+	width: 12.5rem;
 }
 
 .about-us__img {
@@ -5027,10 +5017,10 @@ html {
 
 .blog__inner::before {
 	background: url(./..//images/blog-logo.svg) center center/contain no-repeat;
-	bottom: 81.7%;
+	bottom: 72%;
 	content: "";
 	height: 12.5625rem;
-	left: calc(50% - min(48vw, 38.75rem));
+	left: calc(50% - min(48vw, 43.75rem));
 	position: absolute;
 	width: 27.3125rem;
 	z-index: -1;
@@ -5313,13 +5303,6 @@ html {
 	height: 8.625rem;
 	width: 18.8125rem;
 	z-index: -1;
-}
-
-.contact__inner::after {
-	height: 8.625rem;
-	right: calc(50% - min(48vw, 41.875rem));
-	top: -2.5rem;
-	width: 18.8125rem;
 }
 
 .contact__container {
@@ -5870,10 +5853,10 @@ html {
 	background: url(./../images/prco-logo.svg) center center/contain no-repeat;
 	bottom: -19.5%;
 	content: "";
-	height: 12.5625rem;
+	height: 11.25rem;
 	left: calc(50% - min(48vw, 38.75rem));
 	position: absolute;
-	width: 27.3125rem;
+	width: 18.75rem;
 }
 
 .price__container {
@@ -6110,7 +6093,7 @@ html {
 	background: url(./..//images/voice-logo.svg) center center/contain no-repeat;
 	bottom: 95.7%;
 	content: "";
-	height: 8.625rem;
+	height: 11.25rem;
 	left: calc(50% - min(48vw, 38.75rem));
 	position: absolute;
 	width: 18.8125rem;
@@ -6120,10 +6103,10 @@ html {
 	background: url(./../images/voice-logo2.svg) center center/contain no-repeat;
 	bottom: -11%;
 	content: "";
-	height: 10.125rem;
+	height: 18.75rem;
 	position: absolute;
-	right: calc(50% - min(48vw, 33.75rem));
-	width: 4.4375rem;
+	right: calc(50% - min(48vw, 37.5rem));
+	width: 11.25rem;
 }
 
 .voice__cards {
@@ -6166,14 +6149,6 @@ html {
 
 html {
 	font-size: 4.2666666667vw;
-}
-
-}
-
-@media (orientation: landscape) and (max-width: 47.9375rem) {
-
-.contact__inner::after {
-	right: calc(52% - min(44vw, 40.625rem));
 }
 
 }

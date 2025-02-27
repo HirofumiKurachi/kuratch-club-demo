@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .about-us__inner {
   position: relative;
 }
@@ -10,7 +9,7 @@
     position: absolute;
     content: "";
     background: url(./../images/about-us-logo.svg) center center / contain no-repeat;
-    width: rem(194);
+    width: rem(200);
     height: rem(181);
     right: calc(50% - min(48vw, rem(637)));
     bottom: calc(50% - min(48vw, rem(478)));
@@ -20,7 +19,6 @@
 .about-us__img-box {
   margin-top: rem(25);
 }
-
 
 .about-us__img {
   position: relative;
@@ -32,7 +30,6 @@
     margin-top: rem(40);
   }
 }
-
 
 .about-us__img-small {
   position: relative;
@@ -47,10 +44,9 @@
   width: 100%;
 
   @include mq("md") {
-      aspect-ratio: 400/606;
+    aspect-ratio: 400/606;
   }
 }
-
 
 .about-us__img-big {
   margin-left: auto;
@@ -59,7 +55,7 @@
   z-index: 1;
 
   @include mq("md") {
-      margin-top: -48.8%;
+    margin-top: -48.8%;
   }
 }
 
@@ -70,10 +66,9 @@
   width: 100%;
 
   @include mq("md") {
-      aspect-ratio: 880/581;
+    aspect-ratio: 880/581;
   }
 }
-
 
 .about-us__container {
   margin-top: rem(39);
