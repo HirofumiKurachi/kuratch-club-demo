@@ -28,7 +28,7 @@
           </li>
           <li class=" header__item">
             <a class="header__link"
-              href="<?php echo esc_url(home_url('/')); ?>information"><span>Information</span>ダイビング情報</a>
+              href="<?php echo esc_url(home_url('/')); ?>information"><span>Information</span>ツアー情報</a>
           </li>
           <li class="header__item">
             <a class="header__link" href="<?php echo esc_url(home_url('/')); ?>blog"><span>Blog</span>ブログ</a>
@@ -94,7 +94,7 @@
               <ul class="drawer-menu__items-bottom">
                 <li class="drawer-menu__item">
                   <a href="<?php echo esc_url(home_url('/')); ?>information" class="drawer-menu__link-main">
-                    <p class="drawer__logo-text">ダイビング情報</p>
+                    <p class="drawer__logo-text">ツアー情報</p>
                   </a>
                 </li>
                 <li class="drawer-menu__item-text"><a

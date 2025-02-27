@@ -187,7 +187,7 @@
     <div class="information__inner inner">
       <div class="information__title section-title">
         <p class="section-title__sub">Information</p>
-        <h2 class="section-title__main">ダイビング情報</h2>
+        <h2 class="section-title__main">ツアー情報</h2>
       </div>
       <div class="information__container">
         <div class="information__img colorbox">

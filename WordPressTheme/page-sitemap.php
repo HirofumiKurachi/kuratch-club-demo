@@ -60,7 +60,7 @@
         <ul class="site-map-menu__left-items-bottom">
           <li class="site-map-menu__item">
             <a href="<?php echo esc_url(home_url('/')); ?>information" class="site-map-menu__link-main">
-              <p class="site-map-menu__logo-text">ダイビング情報</p>
+              <p class="site-map-menu__logo-text">ツアー情報</p>
             </a>
           </li>
           <li class="site-map-menu__item-text">

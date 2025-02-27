@@ -119,7 +119,7 @@
               <ul class="footer-menu__left-items-bottom">
                 <li class="footer-menu__item">
                   <a href="<?php echo esc_url(home_url('/')); ?>information" class="footer-menu__link-main">
-                    <p class="footer-menu__logo-text">ダイビング情報</p>
+                    <p class="footer-menu__logo-text">ツアー情報</p>
                   </a>
                 </li>
                 <li class="footer-menu__item-text">
