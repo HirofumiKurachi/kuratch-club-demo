@@ -14,7 +14,7 @@
     <div class="header__inner">
       <a href="<?php echo esc_url(home_url('/')); ?>top" class="header__name-layout">
         <h1 class="header__name">
-          <img class="logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.png" alt="CodeUps" />
+          <img class="logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.png" alt="kuratch-club" />
         </h1>
       </a>
       <nav class="header__nav md-none">

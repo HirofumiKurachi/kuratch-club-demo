@@ -8,8 +8,7 @@
     <picture class="sub-page-mv__picture">
       <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/faq-page-pc-img.jpg"
         media="(min-width: 768px)" />
-      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/faq-page-sp-img.jpg"
-        alt="白い砂浜とエメラルドグリーンの海が広がっている様子" />
+      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/faq-page-sp-img.jpg" alt="山々に囲まれた海と街の様子" />
     </picture>
   </div>
 </section>

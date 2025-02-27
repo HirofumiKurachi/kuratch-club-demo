@@ -6,7 +6,7 @@
             <div class="contact__box contact-box">
               <a href="<?php echo esc_url(home_url('/')); ?>top" class="contact-box__logo-layout">
                 <h3 class="contact-box__logo">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/contact-logo.svg" alt="CodeUps" />
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/contact-logo.svg" alt="kuratch-club" />
                 </h3>
               </a>
               <div class="contact-box__information">
