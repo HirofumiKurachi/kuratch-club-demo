@@ -14,7 +14,7 @@
 .information-tab__button {
   background-color: $blue1;
   padding: rem(10) rem(10);
-  color: $blue1;
+  color: $blue2;
   font-family: "Noto Sans JP", serif;
   box-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.25);
   transition: all 0.5s;
@@ -49,7 +49,7 @@
 }
 
 .information-tab__button.is-active {
-  background-color: $blue1;
+  background-color: $blue2;
   color: $white;
 }
 
