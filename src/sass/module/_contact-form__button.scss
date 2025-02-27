@@ -9,7 +9,7 @@
   width: rem(203);
   padding: rem(16) rem(40);
   color: $white;
-  background-color: $green;
+  background-color: $blue1;
   font-size: rem(14);
   line-height: calc(22 / 14);
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
@@ -17,7 +17,7 @@
   height: rem(54);
   overflow: visible;
   z-index: 1;
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   font-family: "Gotu", sans-serif;
   cursor: pointer;
 }
@@ -27,7 +27,7 @@
   position: absolute;
   top: rem(3);
   left: rem(4);
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   width: rem(203);
   height: rem(54);
   z-index: -1;
@@ -50,8 +50,8 @@
 }
 
 .contact-form__button:hover {
-  color: $green;
-  border: 0.0625rem solid $green;
+  color: $blue1;
+  border: 0.0625rem solid $blue1;
 }
 
 .contact-form__button:hover::after {
@@ -60,8 +60,8 @@
 
 .contact-form__button:hover .contact-form__button-arrow,
 .contact-form__button:hover .contact-form__button-arrow2 {
-  border-color: $green;
-  background-color: $green; /* 背景色を$greenに変更 */
+  border-color: $blue1;
+  background-color: $blue1; /* 背景色を$blue1に変更 */
 }
 
 .contact-form__button-arrow {
@@ -103,5 +103,5 @@
 }
 
 .contact-form__button:hover input {
-  color: $green;
+  color: $blue1;
 }

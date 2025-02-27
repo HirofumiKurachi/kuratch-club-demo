@@ -480,7 +480,7 @@ a {
 }
 
 .about-us__head {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Gotu", sans-serif;
 	font-size: 2.5rem;
 	font-weight: 400;
@@ -514,7 +514,7 @@ a {
 }
 
 .blog-card__text {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: "Noto Sans JP", serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -598,7 +598,7 @@ a {
 }
 
 .blog-cards-detail__text {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: Noto Sans JP;
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -646,7 +646,7 @@ a {
 }
 
 .blog-cards-detail__item-container__text {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: Noto Sans JP;
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -757,7 +757,7 @@ a {
 }
 
 .blog-heading-accordion__title {
-	color: #408F95;
+	color: #4981cf;
 	cursor: pointer;
 	font-family: "Noto Sans JP", serif;
 	font-size: 1.5rem;
@@ -791,7 +791,7 @@ a {
 }
 
 .blog-heading-accordion__text {
-	color: #408F95;
+	color: #4981cf;
 	cursor: pointer;
 	font-family: "Noto Sans JP", serif;
 	font-size: 1.5rem;
@@ -858,7 +858,7 @@ a {
 }
 
 .blog-heading-card-campaign__title-sub {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: "Noto Sans JP", serif;
 	font-weight: 500;
 	margin-top: 0.3125rem;
@@ -895,7 +895,7 @@ a {
 }
 
 .blog-heading-card-campaign__price-new {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -903,7 +903,7 @@ a {
 }
 
 .blog-heading-card-campaign__campaign-price-new {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -1046,7 +1046,7 @@ a {
 
 .blog-heading__title-box {
 	align-items: center;
-	border-left: 0.5rem solid #408F95;
+	border-left: 0.5rem solid #4981cf;
 	display: flex;
 	padding-left: 1rem;
 }
@@ -1087,7 +1087,7 @@ a {
 }
 
 .blog-page-card__text {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: Noto Sans JP;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1210,7 +1210,7 @@ body {
 	padding-top: 5.5rem;
 }
 
-.breadcrumb-404 a span::after {
+.breadcrumb.breadcrumb-404 a span::after {
 	border-right: 0.0625rem solid #fff;
 	border-top: 0.0625rem solid #fff;
 	content: "";
@@ -1248,7 +1248,7 @@ body {
 	-webkit-text-decoration: none;
 	background-color: #fff;
 	border: 0.0625rem solid #fff;
-	color: #408F95;
+	color: #4981cf;
 	display: inline-flex;
 	font-family: "Gotu", sans-serif;
 	font-size: 0.875rem;
@@ -1279,7 +1279,7 @@ body {
 }
 
 .page-404__button::after {
-	background: #408F95;
+	background: #4981cf;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -1304,13 +1304,13 @@ body {
 
 .page-404__button:hover .page-404__button-arrow,
 .page-404__button:hover .page-404__button-arrow2 {
-	background-color: #fff; /* 背景色を$greenに変更 */
+	background-color: #fff; /* 背景色を$blue1に変更 */
 	border-color: #fff;
 }
 
 .page-404__button-arrow {
-	border-right: 0.0625rem solid #408F95;
-	border-top: 0.0625rem solid #408F95;
+	border-right: 0.0625rem solid #4981cf;
+	border-top: 0.0625rem solid #4981cf;
 	content: "";
 	display: inline-block;
 	margin-right: 2.0625rem;
@@ -1324,7 +1324,7 @@ body {
 }
 
 .page-404__button-arrow2 {
-	background-color: #408F95;
+	background-color: #4981cf;
 	content: "";
 	height: 0.0625rem;
 	position: absolute;
@@ -1336,8 +1336,8 @@ body {
 
 .button {
 	-webkit-text-decoration: none;
-	background-color: #408F95;
-	border: 0.0625rem solid #408F95;
+	background-color: #4981cf;
+	border: 0.0625rem solid #4981cf;
 	color: #fff;
 	display: inline-flex;
 	font-family: "Gotu", sans-serif;
@@ -1357,7 +1357,7 @@ body {
 }
 
 .button::before {
-	border: 0.0625rem solid #408F95;
+	border: 0.0625rem solid #4981cf;
 	content: "";
 	height: 3.375rem;
 	left: 0.25rem;
@@ -1384,8 +1384,8 @@ body {
 }
 
 .button:hover {
-	border: 0.0625rem solid #408F95;
-	color: #408F95;
+	border: 0.0625rem solid #4981cf;
+	color: #4981cf;
 }
 
 .button:hover::after {
@@ -1394,8 +1394,8 @@ body {
 
 .button:hover .button-arrow,
 .button:hover .button-arrow2 {
-	background-color: #408F95; /* 背景色を$greenに変更 */
-	border-color: #408F95;
+	background-color: #4981cf; /* 背景色を$blue1に変更 */
+	border-color: #4981cf;
 }
 
 .button-arrow {
@@ -1464,9 +1464,9 @@ body {
 }
 
 .campaign-card__title {
-	border: 0.0625rem solid #408F95;
+	border: 0.0625rem solid #4981cf;
 	box-sizing: border-box;
-	color: #408F95;
+	color: #4981cf;
 	display: inline-flex;
 	font-family: "Noto Sans JP", serif;
 	font-size: 0.75rem;
@@ -1476,7 +1476,7 @@ body {
 }
 
 .campaign-card__title-sub {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: "Noto Sans JP", serif;
 	font-weight: 500;
 	margin-top: 0.3125rem;
@@ -1512,7 +1512,7 @@ body {
 }
 
 .campaign-card__price-new {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -1520,7 +1520,7 @@ body {
 }
 
 .campaign-card__campaign-price-new {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
@@ -1549,7 +1549,7 @@ body {
 }
 
 .campaign-card__title-sub-large {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	font-family: "Noto Sans JP", serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1562,7 +1562,7 @@ body {
 }
 
 .campaign-card__date {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Lato", sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
@@ -1571,7 +1571,7 @@ body {
 }
 
 .campaign-card__reserve {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Noto Sans JP", serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -1644,8 +1644,8 @@ body {
 
 .campaign-tab__item {
 	background: #fff;
-	border: solid 0.0625rem #408F95;
-	color: #408F95;
+	border: solid 0.0625rem #4981cf;
+	color: #4981cf;
 	cursor: pointer;
 	display: flex;
 	font-family: "Noto Sans JP", serif;
@@ -1658,24 +1658,24 @@ body {
 }
 
 .campaign-tab__item:hover {
-	background-color: #408F95;
+	background-color: #4981cf;
 	color: #fff;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
 .campaign-tab__item.is-color {
-	background-color: #408F95;
+	background-color: #4981cf;
 	color: #fff;
 }
 
 .campaign-tab__item.is-color:hover {
 	background-color: #fff;
-	color: #408F95;
+	color: #4981cf;
 }
 
 .campaign-tab__item.is-active {
-	background-color: #408F95;
+	background-color: #4981cf;
 	color: #fff;
 }
 
@@ -1730,7 +1730,7 @@ body {
 }
 
 .colorbox .color {
-	background-color: #408F95;
+	background-color: #4981cf;
 	height: 100%;
 	position: absolute;
 	right: 0;
@@ -1780,7 +1780,7 @@ body {
 }
 
 .contact-box__logo-layout {
-	border-bottom: 0.0625rem solid #408F95;
+	border-bottom: 0.0625rem solid #4981cf;
 	display: flex;
 	justify-content: center;
 	padding-bottom: 0.4375rem;
@@ -1788,8 +1788,8 @@ body {
 
 .contact-form__button {
 	-webkit-text-decoration: none;
-	background-color: #408F95;
-	border: 0.0625rem solid #408F95;
+	background-color: #4981cf;
+	border: 0.0625rem solid #4981cf;
 	color: #fff;
 	cursor: pointer;
 	display: inline-flex;
@@ -1810,7 +1810,7 @@ body {
 }
 
 .contact-form__button::before {
-	border: 0.0625rem solid #408F95;
+	border: 0.0625rem solid #4981cf;
 	content: "";
 	height: 3.375rem;
 	left: 0.25rem;
@@ -1837,8 +1837,8 @@ body {
 }
 
 .contact-form__button:hover {
-	border: 0.0625rem solid #408F95;
-	color: #408F95;
+	border: 0.0625rem solid #4981cf;
+	color: #4981cf;
 }
 
 .contact-form__button:hover::after {
@@ -1847,8 +1847,8 @@ body {
 
 .contact-form__button:hover .contact-form__button-arrow,
 .contact-form__button:hover .contact-form__button-arrow2 {
-	background-color: #408F95; /* 背景色を$greenに変更 */
-	border-color: #408F95;
+	background-color: #4981cf; /* 背景色を$blue1に変更 */
+	border-color: #4981cf;
 }
 
 .contact-form__button-arrow {
@@ -1884,11 +1884,11 @@ body {
 }
 
 .contact-form__button:hover input {
-	color: #408F95;
+	color: #4981cf;
 }
 
 .contact-form__personal-information.personal-information input + span::before {
-	border: 0.0625rem solid #408F95;
+	border: 0.0625rem solid #4981cf;
 	content: "";
 	display: block;
 	height: 1.375rem;
@@ -3823,11 +3823,11 @@ input[type=checkbox]:checked + .personal-information__check-label::after {
 }
 
 .section-title__sub::first-letter {
-	color: #408F95; /* 先頭の文字の色を変更 */
+	color: #4981cf; /* 先頭の文字の色を変更 */
 }
 
 .section-title__main {
-	color: #408F95;
+	color: #4981cf;
 	font-family: "Noto Sans JP", serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -3857,7 +3857,7 @@ input[type=checkbox]:checked + .personal-information__check-label::after {
 }
 
 .section-title__sub--large::first-letter {
-	color: #408F95;
+	color: #4981cf;
 }
 
 .site-map-menu {

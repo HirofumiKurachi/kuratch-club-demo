@@ -10,8 +10,8 @@
 .wp-pagenavi a {
   width: rem(38);
   height: rem(38);
-  border: rem(1) solid $green;
-  color: $green;
+  border: rem(1) solid $blue1;
+  color: $blue1;
   padding: rem(7) rem(14);
   font-size: rem(16);
   margin: 0 rem(6);
@@ -22,7 +22,7 @@
 .wp-pagenavi span  {
   width: rem(38);
   height: rem(38);
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   color: $white;
   padding: rem(7) rem(14);
   font-size: rem(16);
@@ -34,11 +34,11 @@
 
 
 .wp-pagenavi span.current{
-  background-color: $green;
+  background-color: $blue1;
   color: #fff;
   width: rem(38);
   height: rem(38);
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   padding: rem(7) rem(14);
   margin: 0 rem(5);
 }
@@ -52,8 +52,8 @@
 }
 
 .previouspostslink::before {
-  border-right: rem(1) solid $green;
-  border-top: rem(1) solid $green;
+  border-right: rem(1) solid $blue1;
+  border-top: rem(1) solid $blue1;
   content: '';
   display: block;
   width: rem(11);
@@ -66,8 +66,8 @@
 
 
 .nextpostslink::before {
-  border-right: rem(1) solid $green;
-  border-top: rem(1) solid $green;
+  border-right: rem(1) solid $blue1;
+  border-top: rem(1) solid $blue1;
   content: '';
   display: block;
   width: rem(11);

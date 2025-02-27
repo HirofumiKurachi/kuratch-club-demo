@@ -3,7 +3,7 @@
 .campaign-tab__item {
   justify-items: center;
   position: relative;
-  border: solid rem(1) $green;
+  border: solid rem(1) $blue1;
   display: flex;
   justify-content: center;
   padding: rem(6) 0;
@@ -11,7 +11,7 @@
   font-weight: $normal;
   font-family: "Noto Sans JP", serif;
   cursor: pointer;
-  color: $green;
+  color: $blue1;
   background: $white;
 
   @include mq("md") {
@@ -23,21 +23,21 @@
   transition: 0.3s;
   cursor: pointer;
   color: $white;
-  background-color: $green;
+  background-color: $blue1;
 }
 
 .campaign-tab__item.is-color {
   color: $white;
-  background-color: $green;
+  background-color: $blue1;
 }
 
 .campaign-tab__item.is-color:hover {
-  color: $green;
+  color: $blue1;
   background-color: $white;
 }
 
 .campaign-tab__item.is-active {
   color: $white;
-  background-color: $green;
+  background-color: $blue1;
 }
 

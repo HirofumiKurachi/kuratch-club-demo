@@ -31,8 +31,8 @@
 
   .voice-card__title {
     font-size: rem(12);
-    color: $green;
-    border: rem(1) solid $green;
+    color: $blue1;
+    border: rem(1) solid $blue1;
     padding: rem(7) rem(10) rem(3.5) rem(12);
     white-space: nowrap;
     margin-top: rem(-2);
@@ -50,7 +50,7 @@
     font-size: rem(16);
     font-weight: $medium;
     margin-top: rem(-3);
-    border-bottom: rem(1) solid $green;
+    border-bottom: rem(1) solid $blue1;
 
     @include mq("md") {
       font-size: rem(24);

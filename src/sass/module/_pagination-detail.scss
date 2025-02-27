@@ -26,8 +26,8 @@
 .pagination-detail__nav a {
   width: rem(38);
   height: rem(38);
-  border: rem(1) solid $green;
-  color: $green;
+  border: rem(1) solid $blue1;
+  color: $blue1;
   padding: rem(7) rem(14);
   font-size: rem(16);
   margin: 0 rem(6);
@@ -42,7 +42,7 @@
 .pagination-detail__nav span {
   width: rem(38);
   height: rem(38);
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   color: $white;
   padding: rem(7) rem(14);
   font-size: rem(16);
@@ -70,8 +70,8 @@
 }
 
 .pagination-detail__prev::before {
-  border-right: rem(1) solid $green;
-  border-top: rem(1) solid $green;
+  border-right: rem(1) solid $blue1;
+  border-top: rem(1) solid $blue1;
   content: '';
   display: inline-block;
   width: rem(11);
@@ -90,15 +90,15 @@
 
 
 .pagination-detail__prev:hover {
-  background-color: $green;
+  background-color: $blue1;
   color: $white;
   transition: .3s ease-in-out;
 }
 
 
 .pagination-detail__next::before {
-  border-right: rem(1) solid $green;
-  border-top: rem(1) solid $green;
+  border-right: rem(1) solid $blue1;
+  border-top: rem(1) solid $blue1;
   content: '';
   display: inline-block;
   width: rem(11);
@@ -110,7 +110,7 @@
 }
 
 .pagination-detail__next:hover {
-  background-color: $green;
+  background-color: $blue1;
   color: $white;
   transition: .3s ease-in-out;
 }

@@ -50,7 +50,7 @@
   }
 
   .contact__title-text {
-    color: $green;
+    color: $blue1;
     font-size: rem(14);
     line-height: calc(18/14);
     font-weight: $normal;
@@ -88,7 +88,7 @@
 
     @include mq("md") {
       padding-left: rem(81);
-      border-left: rem(1) solid $green;
+      border-left: rem(1) solid $blue1;
       padding-top: rem(5);
       margin-top: rem(0);
     }

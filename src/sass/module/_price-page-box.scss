@@ -7,14 +7,14 @@
 
 .price-page-item__head-sp {
   text-align: center;
-  background-color: $green;
+  background-color: $blue1;
   color: $white;
   padding-top: rem(11);
   padding-bottom: rem(5);
   padding-left: rem(40);
   padding-right: rem(8);
   position: relative;
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   font-size: rem(16);
   font-weight: $bold;
 
@@ -44,10 +44,10 @@
   @include mq("md") {
     display: table-cell;
     text-align: center;
-    background-color: $green;
+    background-color: $blue1;
     color: $white;
     position: relative;
-    border: rem(1) solid $green;
+    border: rem(1) solid $blue1;
     padding-top: rem(43);
     padding-right: rem(10);
     padding-bottom: rem(74);
@@ -80,10 +80,10 @@
   @include mq("md") {
     display: table-cell;
     text-align: center;
-    background-color: $green;
+    background-color: $blue1;
     color: $white;
     position: relative;
-    border: rem(1) solid $green;
+    border: rem(1) solid $blue1;
     padding-top: rem(74);
     padding-right: rem(10);
     padding-bottom: rem(74);
@@ -113,14 +113,14 @@
 
 .price-page-item__head-sp-middle {
   text-align: center;
-  background-color: $green;
+  background-color: $blue1;
   color: $white;
   padding-top: rem(11);
   padding-bottom: rem(5);
   padding-left: rem(40);
   padding-right: rem(8);
   position: relative;
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   font-size: rem(16);
   font-weight: $bold;
 
@@ -147,14 +147,14 @@
 
 .price-page-item__head-sp-last {
   text-align: center;
-  background-color: $green;
+  background-color: $blue1;
   color: $white;
   padding-top: rem(11);
   padding-bottom: rem(5);
   padding-left: rem(40);
   padding-right: rem(8);
   position: relative;
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   font-size: rem(16);
   font-weight: $bold;
 
@@ -193,7 +193,7 @@
   padding-left: rem(7);
   text-align: center;
   width: 50%;
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
   height: rem(59);
   font-family: "Noto Sans JP", serif;
 
@@ -217,7 +217,7 @@
   padding-right: rem(13);
   padding-bottom: rem(9);
   padding-left: rem(8);
-  border: rem(1) solid $green;
+  border: rem(1) solid $blue1;
 
   @include mq("md") {
     width: 23%;

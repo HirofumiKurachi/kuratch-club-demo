@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .faq-page-accordion__inner.inner {
   position: relative;
   max-width: rem(750);
@@ -39,7 +38,7 @@
   padding-right: rem(49);
   cursor: pointer;
   color: $white;
-  background-color: $green;
+  background-color: $blue1;
   font-family: "Noto Sans JP", serif;
 
   @include mq("md") {
@@ -112,9 +111,9 @@
 
 .faq-page-accordion__content {
   display: block;
-  border-right: rem(1) solid $green;
-  border-bottom: rem(1) solid $green;
-  border-left: rem(1) solid $green;
+  border-right: rem(1) solid $blue1;
+  border-bottom: rem(1) solid $blue1;
+  border-left: rem(1) solid $blue1;
   padding-top: rem(25);
   padding-bottom: rem(19);
   padding-left: rem(16);
@@ -123,7 +122,7 @@
 
   @include mq("md") {
     margin-top: rem(16);
-    border-top: rem(1) solid $green;
+    border-top: rem(1) solid $blue1;
     padding: rem(40);
     padding-top: rem(40);
     padding-right: rem(40);
