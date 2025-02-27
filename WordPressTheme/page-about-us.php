@@ -21,7 +21,7 @@
   <div class="about-us-page__inner inner">
     <div class="about-us-page__img">
       <div class="about-us-page__img-small md-none">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-img1.jpg" alt="屋根の上にシーサーの置物がおいてある様子"
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-img1.jpg" alt="サングラスの男性がピースしている様子"
           class="about-us-page__img1" />
       </div>
       <div class="about-us-page__img-big">
