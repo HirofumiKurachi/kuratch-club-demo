@@ -153,7 +153,8 @@
         <h3 class="about-us__head">Adventure<br />is&nbsp;calling</h3>
         <div class="about-us__container-box">
           <p class="about-us__text">
-            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+            私たちは、ただの旅行ではなく 心に残る体験
+            を提供することを大切にしています。<br />美しい自然、異文化との出会い、新しい挑戦——旅は人生を豊かにする最高の冒険です。<br />世界をもっと深く感じ、忘れられない思い出を一緒に作りませんか？<br />あなたの次の旅が、最高の冒険になりますように。
           </p>
           <div class="about-us__button-layout">
             <a href="<?php echo esc_url(home_url('/')); ?>about-us" class="button">View&nbsp;more<span
@@ -176,10 +177,10 @@
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-img.jpg" alt="3匹の黄色い魚が珊瑚礁の近くを様子" />
         </div>
         <div class="information__box">
-          <h3 class="information__box-title">ライセンス講習</h3>
-          <p class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADI<br
-              class="md-none" />の「正規店」として店舗登録されています。<br />正規登録店として、安心安全に初めての方でも安心安全にライセン<br
-              class="md-none" />ス取得をサポート致します。</p>
+          <h3 class="information__box-title">お寺・遺跡巡り</h3>
+          <p class="information__text">
+            歴史と文化が息づくタイのお寺や遺跡を巡るツアー。荘厳な建築や美しい仏像を眺めながら、タイ仏教の魅力に触れてみませんか？日本語ガイドが分かりやすく解説し、初心者でも安心して楽しめます。静寂な空間で心を落ち着かせ、神聖な雰囲気を体験できる貴重な時間。ゆったりとしたペースで巡るため、リラックスしながら観光を満喫できます！
+          </p>
           <div class="information__button-layout">
             <a href="<?php echo esc_url(home_url('/')); ?>information" class="button">View&nbsp;more<span
                 class="button-arrow2"></span><span class="button-arrow"></span> </a>

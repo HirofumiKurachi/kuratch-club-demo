@@ -30,10 +30,11 @@
       </div>
     </div>
     <div class="about-us-page__container">
-      <h3 class="about-us-page__head">Dive&nbsp;into<br />the&nbsp;Ocean</h3>
+      <h3 class="about-us-page__head">Adventure<br />is&nbsp;calling</h3>
       <div class="about-us-page__container-box">
         <p class="about-us-page__text">
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          私たちは、ただの旅行ではなく 心に残る体験
+          を提供することを大切にしています。<br />美しい自然、異文化との出会い、新しい挑戦——旅は人生を豊かにする最高の冒険です。<br />世界をもっと深く感じ、忘れられない思い出を一緒に作りませんか？<br />あなたの次の旅が、最高の冒険になりますように。
         </p>
       </div>
     </div>
