@@ -65,7 +65,7 @@
             <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-title__name-layout">
               <h3 class="footer-title__name">
                 <img class="footer-title__name-logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.png"
-                  alt="CodeUps" />
+                  alt="Kuratch-club" />
               </h3>
             </a>
             <div class="footer-title__logo-box">
