@@ -144,8 +144,8 @@
               class="about-us-page__img1" />
           </div>
           <div class="about-us__img-big">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-img3.jpg" alt="2匹の黄色い魚が海中を泳いでいる様子"
-              class="about-us-page__img2" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-img3.jpg"
+              alt="ボートが何艇も停泊している浜辺に夕陽が沈もうとしている様子" class="about-us-page__img2" />
           </div>
         </div>
       </div>
@@ -174,7 +174,7 @@
       </div>
       <div class="information__container">
         <div class="information__img colorbox">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-img.jpg" alt="3匹の黄色い魚が珊瑚礁の近くを様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-img.jpg" alt="バンコク三大寺院＋アユタヤ遺跡ツアー" />
         </div>
         <div class="information__box">
           <h3 class="information__box-title">お寺・遺跡巡り</h3>
@@ -344,7 +344,7 @@
       </div>
       <div class="price__container">
         <div class="price__img-sp md-show">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img2.jpg" alt="ウミガメが海中を移動している様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img2.jpg" alt="二つのお寺の間に仏の置物が立っている様子" />
         </div>
         <div class="price__items">
           <?php
@@ -461,7 +461,7 @@
           </div>
         </div>
         <div class="price__img-pc md-none colorbox">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img1.jpg" alt="ウミガメが海中を移動している様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img1.jpg" alt="二つのお寺の間に仏の置物が立っている様子" />
         </div>
       </div>
     </div>

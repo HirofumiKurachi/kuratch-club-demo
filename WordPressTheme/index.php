@@ -13,29 +13,29 @@
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img1-pc.jpg"
                 media="(min-width: 768px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img1.jpg" alt="ウミガメが海を泳いでいる様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img1.jpg" alt="船が砂浜に停泊している様子" />
             </picture>
           </div>
           <div class="mv__slider swiper-slide">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img2-pc.jpg"
                 media="(min-width: 768px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img2.jpg"
-                alt="海を泳いでいるウミガメを2人のダイバーがみている様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img2.jpg" alt="二頭の親子ゾウ寄り添っている様子" />
             </picture>
           </div>
           <div class="mv__slider swiper-slide">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img3-pc.jpg"
                 media="(min-width: 768px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img3.jpg" alt="沖合に船を停泊させている様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img3.jpg" alt="山の上の寺院が夕日で赤く染まっている様子" />
             </picture>
           </div>
           <div class="mv__slider swiper-slide">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img4-pc.jpg"
                 media="(min-width: 768px)" />
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img4.jpg" alt="青い海と白い砂浜が広がっている様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/mv-img4.jpg"
+                alt="2台のトゥクトゥクがヤワラートのネオンの前に置いてある様子" />
             </picture>
           </div>
         </div>
@@ -56,7 +56,7 @@
               <a href="#" class="campaign-card">
                 <div class="campaign-card__img">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign-img1.jpg"
-                    alt="多種多様のカラフルな魚たちが泳いでいる様子" />
+                    alt="バンコク三大寺院＋アユタヤ遺跡ツアー" />
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
@@ -66,8 +66,8 @@
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
                     <div class="campaign-card__price-box">
-                      <p class="campaign-card__price-old">¥56,000</p>
-                      <p class="campaign-card__price-new">¥46,000</p>
+                      <p class="campaign-card__price-old">¥25,000</p>
+                      <p class="campaign-card__price-new">¥20,000</p>
                     </div>
                   </div>
                 </div>
@@ -76,8 +76,7 @@
             <div class="campaign__container-slide swiper-slide">
               <a href="#" class="campaign-card">
                 <div class="campaign-card__img">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign-img2.jpg"
-                    alt="綺麗な海に船が3隻停泊している様子" />
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign-img2.jpg" alt="タイ式全身マッサージ" />
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
@@ -87,8 +86,8 @@
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
                     <div class="campaign-card__price-box">
-                      <p class="campaign-card__price-old">¥24,000</p>
-                      <p class="campaign-card__price-new">¥18,000</p>
+                      <p class="campaign-card__price-old">¥58,000</p>
+                      <p class="campaign-card__price-new">¥40,000</p>
                     </div>
                   </div>
                 </div>
@@ -98,7 +97,7 @@
               <a href="#" class="campaign-card">
                 <div class="campaign-card__img">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign-img3.jpg"
-                    alt="暗い海の中を泳いているクラゲが光に当てられている様子" />
+                    alt="寺院巡り＋水上マーケットツアー" />
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
@@ -108,8 +107,8 @@
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
                     <div class="campaign-card__price-box">
-                      <p class="campaign-card__price-old">¥10,000</p>
-                      <p class="campaign-card__price-new">¥8,000</p>
+                      <p class="campaign-card__price-old">¥15,000</p>
+                      <p class="campaign-card__price-new">¥9,000</p>
                     </div>
                   </div>
                 </div>
@@ -118,8 +117,7 @@
             <div class="campaign__container-slide swiper-slide">
               <a href="#" class="campaign-card">
                 <div class="campaign-card__img">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign-img4.jpg"
-                    alt="複数のダイバーたちが海の上で今にも潜ろうとしている様子" />
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/campaign-img4.jpg" alt="【クラビ発】島巡りツアー" />
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
@@ -129,8 +127,8 @@
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
                     <div class="campaign-card__price-box">
-                      <p class="campaign-card__price-old">¥20,000</p>
-                      <p class="campaign-card__price-new">¥16,000</p>
+                      <p class="campaign-card__price-old">¥25,000</p>
+                      <p class="campaign-card__price-new">¥20,000</p>
                     </div>
                   </div>
                 </div>
@@ -163,8 +161,8 @@
               class="about-us-page__img1" />
           </div>
           <div class="about-us__img-big">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-img3.jpg" alt="2匹の黄色い魚が海中を泳いでいる様子"
-              class="about-us-page__img2" />
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/aboutus-img3.jpg"
+              alt="ボートが何艇も停泊している浜辺に夕陽が沈もうとしている様子" class="about-us-page__img2" />
           </div>
         </div>
       </div>
@@ -192,13 +190,13 @@
       </div>
       <div class="information__container">
         <div class="information__img colorbox">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-img.jpg" alt="3匹の黄色い魚が珊瑚礁の近くを様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-img.jpg" alt="バンコク三大寺院＋アユタヤ遺跡ツアー" />
         </div>
         <div class="information__box">
           <h3 class="information__box-title">お寺・遺跡巡り</h3>
-          <p class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADI<br
-              class="md-none" />の「正規店」として店舗登録されています。<br />正規登録店として、安心安全に初めての方でも安心安全にライセン<br
-              class="md-none" />ス取得をサポート致します。</p>
+          <p class="information__text">
+            歴史と文化が息づくタイのお寺や遺跡を巡るツアー。荘厳な建築や美しい仏像を眺めながら、タイ仏教の魅力に触れてみませんか？日本語ガイドが分かりやすく解説し、初心者でも安心して楽しめます。静寂な空間で心を落ち着かせ、神聖な雰囲気を体験できる貴重な時間。ゆったりとしたペースで巡るため、リラックスしながら観光を満喫できます！
+          </p>
           <div class="information__button-layout">
             <a href="information-page.html" class="button">View&nbsp;more<span class="button-arrow2"></span><span
                 class="button-arrow"></span> </a>
@@ -218,41 +216,39 @@
         <a href="#" class="blog-cards__item-box blog-card">
           <div class="blog-card__item">
             <div class="blog-card__img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-img2.jpg"
-                alt="海底にカラフルなイソギンチャクが生えている様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-img2.jpg" alt="山に囲まれた海がある街の様子" />
             </div>
             <div class="blog-card__body">
-              <time class="blog-card__date" datetime="2022-11-17">2023.11/17</time>
-              <h3 class="blog-card__text">お寺・遺跡巡り</h3>
+              <time class="blog-card__date" datetime="2025-02-28">2025.02/28</time>
+              <h3 class="blog-card__text">自然を感じに</h3>
               <p class="blog-card__text-sub">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                朝の静けさの中、広がる雄大な山々を眺めに行ってきました。霧がかかった幻想的な風景と、澄んだ空気に包まれながら、心が洗われるような気分を味わいました。自然の中に身を置くと、</p>
             </div>
           </div>
         </a>
         <a href="#" class="blog-cards__item-box blog-card">
           <div class="blog-card__item">
             <div class="blog-card__img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-img3.jpg" alt="ウミガメが海中を優雅に泳いでいる様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-img3.jpg" alt="ムエタイ選手が練習している様子" />
             </div>
             <div class="blog-card__body">
-              <time class="blog-card__date" datetime="2022-11-23">2023.11/17</time>
-              <h3 class="blog-card__text">ウミガメと泳ぐ</h3>
+              <time class="blog-card__date" datetime="2025-02-26">2025.02/26</time>
+              <h3 class="blog-card__text">ムエタイ観戦</h3>
               <p class="blog-card__text-sub">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                タイの国技「ムエタイ」の試合を観戦してきました！リング上で繰り広げられる選手たちの激しい攻防、繊細なテクニック、そして熱気あふれる会場の雰囲気はまさに圧巻。観客の声援が飛</p>
             </div>
           </div>
         </a>
         <a href="#" class="blog-cards__item-box blog-card">
           <div class="blog-card__item">
             <div class="blog-card__img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-img4.jpg"
-                alt="イソギンチャクの間にカクレクマノミが隠れている様子" />
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/blog-img4.jpg" alt="無性に食べたくなるパッタイ" />
             </div>
             <div class="blog-card__body">
-              <time class="blog-card__date" datetime="2022-11-23">2023.11/17</time>
-              <h3 class="blog-card__text">カクレクマノミ</h3>
+              <time class="blog-card__date" datetime="2025-02-24">2025.02/24</time>
+              <h3 class="blog-card__text">無性に食べたくなる</h3>
               <p class="blog-card__text-sub">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                ある日、突然「パッタイが食べたい！」という衝動に駆られ、ついに本場の味を求めてタイ料理店へ。炒めたての米麺に、甘辛いタマリンドソースの香ばしい香りが広がり、食欲をそそられ</p>
             </div>
           </div>
         </a>
@@ -276,20 +272,20 @@
             <div class="voice-card__container">
               <div class="voice-card__title-box">
                 <div class="voice-card__title-box1">
-                  <p class="voice-card__title-sub">20代(女性)</p>
-                  <p class="voice-card__title">お寺・遺跡巡り</p>
+                  <p class="voice-card__title-sub">40代(夫婦)</p>
+                  <p class="voice-card__title">アクティビティ</p>
                 </div>
                 <div class="voice-card__title-box2">
-                  <p class="voice-card__title-text">ここにタイトルが入ります。ここにタイトル</p>
+                  <p class="voice-card__title-text">まるで絵画のような景色に感動！泣けてきた</p>
                 </div>
               </div>
               <div class="voice-card__img colorbox">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/voice-img1.jpg" alt="ベージュの帽子を被った笑顔の女性" />
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/voice-img1.jpg" alt="木々を背景に腕を組んで写真を撮る夫婦" />
               </div>
             </div>
             <div class="voice-card__text-box">
               <p class="voice-card__text-sub">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                結婚記念日に特別な旅行をしたくて、このツアーに申し込みました。写真では見たことがありましたが、実際に訪れるとその美しさに息をのむほどでした。朝靄がかかる山々の景色は、まるで幻想的な絵画のよう！静かな自然の中で、夫婦でゆっくりと時間を過ごすことができました。忙しい日常を忘れて、心からリフレッシュできた旅になりました。次回は秋の紅葉の季節にも訪れてみたいです。
               </p>
             </div>
           </div>
@@ -300,20 +296,20 @@
               <div class="voice-card__title-box">
                 <div class="voice-card__title-box1">
                   <p class="voice-card__title-sub">20代(男性)</p>
-                  <p class="voice-card__title">エンターテイメント</p>
+                  <p class="voice-card__title">お寺・遺跡巡り</p>
                 </div>
                 <div class="voice-card__title-box2">
-                  <p class="voice-card__title-text">ここにタイトルが入ります。ここにタイトル</p>
+                  <p class="voice-card__title-text">めちゃくちゃ良かった！また申し込みたいです</p>
                 </div>
               </div>
               <div class="voice-card__img colorbox">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/voice-img2.jpg"
-                  alt="グッドサインをした紺色のシャツを着た男性" />
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/voice-img2.jpg" alt="紺色のネクタイをした若いスーツの男性" />
               </div>
             </div>
             <div class="voice-card__text-box">
               <p class="voice-card__text-sub">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                海外旅行自体初めてでどこのツアーにしようか悩んでいたら、会社の先輩におすすめされて申し込みました。
+                一人で行くには寂しかったのですが、一人参加のツアーがあったので即決しました！ガイドさんも流暢な日本語で楽しく観光ができました！ 周りはカップルや夫婦だけだったので悔しかったので次回は絶対彼女ときます！！
               </p>
             </div>
           </div>
@@ -334,7 +330,7 @@
       </div>
       <div class="price__container">
         <div class="price__img-sp md-show">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img2.jpg" alt="ウミガメが海中を移動している様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img2.jpg" alt="二つのお寺の間に仏の置物が立っている様子" />
         </div>
         <div class="price__items">
           <div class="price__items-item price-item">
@@ -387,7 +383,7 @@
           </div>
         </div>
         <div class="price__img-pc md-none colorbox">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img1.jpg" alt="ウミガメが海中を移動している様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img1.jpg" alt="二つのお寺の間に仏の置物が立っている様子" />
         </div>
       </div>
       <div class="price__button-layout">
