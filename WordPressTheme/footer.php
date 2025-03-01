@@ -13,7 +13,7 @@
                 <ul class="contact-box__items">
                   <li class="contact-box__items-item contact-item">
                     <address class="contact-item__private">
-                      <p class="contact-item__text">沖縄県那覇市1-1</p>
+                      <p class="contact-item__text">愛知県名古屋市中区1-1</p>
                     </address>
                   </li>
                   <li class="contact-box__items-item contact-item">
