@@ -194,7 +194,7 @@
             </div>
           </div>
         </div>
-        <small class="footer__copyright">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
+        <small class="footer__copyright">Copyright &copy; 2021 - 2023 Kuratch-club LLC. All Rights Reserved.</small>
       </footer>
       <?php wp_footer(); ?>
       </body>
