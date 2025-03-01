@@ -48,7 +48,7 @@
                }
            }
 
-         // **有効なデータが1つもない場合、「ライセンス講習」全体を非表示**
+         // **有効なデータが1つもない場合、「お寺・遺跡巡り」全体を非表示**
          if (!empty($valid_courses)) :
          ?>
       <!--WP化に伴い、id追加-->
@@ -96,7 +96,7 @@
               }
           }
 
-      // **有効なデータが1つもない場合、「体験ダイビング」全体を非表示**
+      // **有効なデータが1つもない場合、「アクテビティ」全体を非表示**
       if (!empty($valid_experiences)) :
       ?>
       <div id="activity" class="price-page-items__item price-page-item">
@@ -143,7 +143,7 @@
           }
       }
 
-       // **有効なデータが1つもない場合、「ファンダイビング」全体を非表示**
+       // **有効なデータが1つもない場合、「エンターテイメント」全体を非表示**
        if (!empty($valid_entertainment)) :
        ?>
       <div id="entertainment" class="price-page-items__item price-page-item">

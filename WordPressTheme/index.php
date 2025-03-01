@@ -60,8 +60,8 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
-                    <p class="campaign-card__title">ライセンス講習</p>
-                    <p class="campaign-card__title-sub">ライセンス取得</p>
+                    <p class="campaign-card__title">お寺・遺跡巡り</p>
+                    <p class="campaign-card__title-sub">お寺・遺跡巡り</p>
                   </div>
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
@@ -81,8 +81,8 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
-                    <p class="campaign-card__title">体験ダイビング</p>
-                    <p class="campaign-card__title-sub">貸切体験ダイビング</p>
+                    <p class="campaign-card__title">アクテビティ</p>
+                    <p class="campaign-card__title-sub">アクテビティ</p>
                   </div>
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
-                    <p class="campaign-card__title">体験ダイビング</p>
+                    <p class="campaign-card__title">アクテビティ</p>
                     <p class="campaign-card__title-sub">ナイトダイビング</p>
                   </div>
                   <div class="campaign-card__price">
@@ -123,8 +123,8 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__text">
-                    <p class="campaign-card__title">ファンダイビング</p>
-                    <p class="campaign-card__title-sub">貸切ファンダイビング</p>
+                    <p class="campaign-card__title">エンターテイメント</p>
+                    <p class="campaign-card__title-sub">エンターテイメント</p>
                   </div>
                   <div class="campaign-card__price">
                     <p class="campaign-card__price-text">全部コミコミ(お一人様)</p>
@@ -195,7 +195,7 @@
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/information-img.jpg" alt="3匹の黄色い魚が珊瑚礁の近くを様子" />
         </div>
         <div class="information__box">
-          <h3 class="information__box-title">ライセンス講習</h3>
+          <h3 class="information__box-title">お寺・遺跡巡り</h3>
           <p class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADI<br
               class="md-none" />の「正規店」として店舗登録されています。<br />正規登録店として、安心安全に初めての方でも安心安全にライセン<br
               class="md-none" />ス取得をサポート致します。</p>
@@ -223,7 +223,7 @@
             </div>
             <div class="blog-card__body">
               <time class="blog-card__date" datetime="2022-11-17">2023.11/17</time>
-              <h3 class="blog-card__text">ライセンス取得</h3>
+              <h3 class="blog-card__text">お寺・遺跡巡り</h3>
               <p class="blog-card__text-sub">
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
             </div>
@@ -277,7 +277,7 @@
               <div class="voice-card__title-box">
                 <div class="voice-card__title-box1">
                   <p class="voice-card__title-sub">20代(女性)</p>
-                  <p class="voice-card__title">ライセンス講習</p>
+                  <p class="voice-card__title">お寺・遺跡巡り</p>
                 </div>
                 <div class="voice-card__title-box2">
                   <p class="voice-card__title-text">ここにタイトルが入ります。ここにタイトル</p>
@@ -300,7 +300,7 @@
               <div class="voice-card__title-box">
                 <div class="voice-card__title-box1">
                   <p class="voice-card__title-sub">20代(男性)</p>
-                  <p class="voice-card__title">ファンダイビング</p>
+                  <p class="voice-card__title">エンターテイメント</p>
                 </div>
                 <div class="voice-card__title-box2">
                   <p class="voice-card__title-text">ここにタイトルが入ります。ここにタイトル</p>
@@ -338,31 +338,31 @@
         </div>
         <div class="price__items">
           <div class="price__items-item price-item">
-            <h3 class="price-item__title">ライセンス講習</h3>
+            <h3 class="price-item__title">お寺・遺跡巡り</h3>
             <dl class="price-item__box">
-              <dt class="price-item__text">オープンウォーターダイバーコース</dt>
-              <dd class="price-item__text-sub">¥50,000</dd>
-              <dt class="price-item__text">アドバンスドオープンウォーターコース</dt>
-              <dd class="price-item__text-sub">¥60,000</dd>
-              <dt class="price-item__text">レスキュー＋FERコース</dt>
+              <dt class="price-item__text">半日お寺・遺跡巡り</dt>
+              <dd class="price-item__text-sub">¥20,000</dd>
+              <dt class="price-item__text">1日お寺・遺跡巡り</dt>
+              <dd class="price-item__text-sub">¥40,000</dd>
+              <dt class="price-item__text">2日お寺・遺跡巡り</dt>
               <dd class="price-item__text-sub">¥70,000</dd>
             </dl>
           </div>
           <div class="price__items-item price-item">
-            <h3 class="price-item__title">体験ダイビング</h3>
+            <h3 class="price-item__title">アクテビティ</h3>
             <dl class="price-item__box">
-              <dt class="price-item__text">ビーチ体験ダイビング(半日)</dt>
+              <dt class="price-item__text">ビーチアクテビティ(半日)</dt>
               <dd class="price-item__text-sub">¥7,000</dd>
-              <dt class="price-item__text">ビーチ体験ダイビング(1日)</dt>
+              <dt class="price-item__text">ビーチアクテビティ(1日)</dt>
               <dd class="price-item__text-sub">¥14,000</dd>
-              <dt class="price-item__text">ボート体験ダイビング(半日)</dt>
+              <dt class="price-item__text">ボートアクテビティ(半日)</dt>
               <dd class="price-item__text-sub">¥10,000</dd>
-              <dt class="price-item__text">ボート体験ダイビング(1日)</dt>
+              <dt class="price-item__text">ボートアクテビティ(1日)</dt>
               <dd class="price-item__text-sub">¥18,000</dd>
             </dl>
           </div>
           <div class="price__items-item price-item">
-            <h3 class="price-item__title">ファンダイビング</h3>
+            <h3 class="price-item__title">エンターテイメント</h3>
             <dl class="price-item__box">
               <dt class="price-item__text">ビーチダイビング(2ダイブ)</dt>
               <dd class="price-item__text-sub">¥14,000</dd>

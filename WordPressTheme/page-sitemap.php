@@ -64,13 +64,13 @@
             </a>
           </li>
           <li class="site-map-menu__item-text">
-            <a href="<?php echo esc_url(add_query_arg('id', 'tab1', home_url('/information'))); ?>">ライセンス講習</a>
+            <a href="<?php echo esc_url(add_query_arg('id', 'tab1', home_url('/information'))); ?>">お寺・遺跡巡り</a>
           </li>
           <li class="site-map-menu__item-text">
-            <a href="<?php echo esc_url(add_query_arg('id', 'tab3', home_url('/information'))); ?>">体験ダイビング</a>
+            <a href="<?php echo esc_url(add_query_arg('id', 'tab3', home_url('/information'))); ?>">アクテビティ</a>
           </li>
           <li class="site-map-menu__item-text">
-            <a href="<?php echo esc_url(add_query_arg('id', 'tab2', home_url('/information'))); ?>">ファンダイビング</a>
+            <a href="<?php echo esc_url(add_query_arg('id', 'tab2', home_url('/information'))); ?>">エンターテイメント</a>
           </li>
           <li class="site-map-menu__item">
             <a href="<?php echo esc_url(home_url('/')); ?>blog" class="site-map-menu__link-sub">
