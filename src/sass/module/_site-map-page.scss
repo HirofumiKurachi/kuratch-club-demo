@@ -18,13 +18,12 @@
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    bottom: 47.7%;
+    bottom: 86%;
     z-index: -1;
   }
 }
 
 .site-map-page__container {
-
   @include mq("md") {
     margin-top: rem(12);
     white-space: nowrap;
