@@ -117,6 +117,11 @@ add_action( 'pre_get_posts', 'modify_posts_per_page_for_archives' );
     }
     add_action('pre_get_posts', 'customize_taxonomy_voice_query');
 
+    //ファビコンの設定
+    function my_theme_setup() {
+        add_theme_support('site-icon');
+    }
+    add_action('after_setup_theme', 'my_theme_setup');
 
 
     //アイキャッチ等の設定
