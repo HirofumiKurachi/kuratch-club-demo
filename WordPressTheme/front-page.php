@@ -344,7 +344,7 @@
       </div>
       <div class="price__container">
         <div class="price__img-sp md-show">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img2.jpg" alt="二つのお寺の間に仏の置物が立っている様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/price-img3.jpg" alt="二つのお寺の間に仏の置物が立っている様子" />
         </div>
         <div class="price__items">
           <?php
